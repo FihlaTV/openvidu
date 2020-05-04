@@ -76,7 +76,7 @@ The `.env` file looks like this:
 ```
 # OpenVidu configuration
 # ----------------------
-# Documentation: https://docs.openvidu.io/en/stable/reference-docs/openvidu-server-params/
+# Documentation: https://docs.openvidu.io/en/stable/reference-docs/openvidu-config/
 
 # NOTE: This file doesn't need to quote assignment values, like most shells do.
 # All values are stored as-is, even if they contain spaces, so don't quote them.
@@ -271,9 +271,9 @@ If `openvidu-server` detects some error, it will show it in the log.
    ---------------------  
    * CERTIFICATE_TYPE=selfsigned
    * OPENVIDU_CDR=false
-   * OPENVIDU_CDR_PATH=log
-   * OPENVIDU_DOMAIN_OR_PUBLIC_IP=d
-   * OPENVIDU_RECORDING=true
+   * OPENVIDU_CDR_PATH=/opt/openvidu/cdr
+   * OPENVIDU_DOMAIN_OR_PUBLIC_IP=my.domain.com
+   * OPENVIDU_RECORDING=false
    * OPENVIDU_RECORDING_AUTOSTOP-TIMEOUT=120
    * OPENVIDU_RECORDING_COMPOSED-URL=
 
